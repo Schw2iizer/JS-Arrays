@@ -134,8 +134,6 @@ var reverse = function(string){
 
 //Next Problem
 
-
-var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list,
   and adding new items to our list. Write a function called removeItem that is given two arguments, the first is myGroceryList, and the
@@ -145,9 +143,20 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   and the second is an item to add to your grocery list. In addItem add the item you passed in to
   myGroceryList then return the new, updated grocery list.
 */
+var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
-  //Code Here
+  var removeItem = function(myGroceryList, removeGroceryList){
+    for (var i = 0; i < removeGroceryList.length; i++){
+      if (removeGroceryList[i] === myGroceryList[i]{
+        myGroceryList.push(myGroceryList[i]);
+      return myGroceryList[i];
+      }
+    }
+  var addItem = function(myGroceryList, addGrocerylist){
 
+  }
+
+}
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
