@@ -98,31 +98,20 @@ var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
 }
 var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-//Above your given a function that will return a random number between 0 and 30, and an array full or numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
-
-
-var getRandomArbitrary = function() {
-  return Math.floor(Math.random() * (30 - 0) + 0);
-}
-var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //Above your given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function named finder that will get a 
 //random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
 var finder = function(){
-    var randomNumber = getRandomArbitary();
-    for (var i = 0; i < numbers.length; i++){
-        if (numbers.indexOf(randomNumber) === -1){
-            return false;
-        } else {
-            return true;
-        }
+    var randomNumber = getRandomArbitrary();
+      if (numbers.indexOf(randomNumber) === -1){
+          return false;
+      } else {
+          return true;
     }
 }
 
-
+finder(numbers);
 //Next problem
-
-
 
 var str = 'this is my sentence';
 //Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
@@ -147,15 +136,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
   var removeItem = function(myGroceryList, removeGroceryList){
     for (var i = 0; i < removeGroceryList.length; i++){
-      if (removeGroceryList[i] === myGroceryList[i]{
-        myGroceryList.push(myGroceryList[i]);
-      return myGroceryList[i];
+      if (removeGroceryList[i] === myGroceryList[i]){
+        myGroceryList.push(removeGroceryList[i]);
+        return myGroceryList[i];
       }
     }
   var addItem = function(myGroceryList, addGrocerylist){
-
   }
-
 }
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
@@ -170,6 +157,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
   //Code Here
 
+var maker = function(){
+  parse
+}
 
 
 //Next Problem
@@ -179,7 +169,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //Write a function called addTen that is given 'numbers' as it's only argument and returns a new
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
-  //Code Here
+var addTen = function(arr){
+  var newArr = [];
+  for (var i = 0; i < arr.length; i++){
+    newArr.push(parseInt(arr[i]) + 10);
+  }
+  return arr;
+}
+addTen(numbers);
 
 
 
